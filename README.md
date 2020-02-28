@@ -46,3 +46,9 @@ name = new FormControl(' ')
 <form FormGroup="CardForm">
 </form>
 ```
+## use formControlName in input field
+```
+<form FormGroup="CardForm">
+<input formControlName="name"/>
+</form>
+```
