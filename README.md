@@ -1,7 +1,7 @@
 ### Reactive forms vs template forms
 
 ##Reactive forms - 
-  - Most of the form logis ic driver by configuration in a component class file 
+  - Most of the form logis is driven by configuration in a component class file 
 -more appropriate for complex forms
 - exposes some aspects of the form to use as Rxjs obervables
 - we have to wire up the "ReactiveFormsModule" to our App module to use them
