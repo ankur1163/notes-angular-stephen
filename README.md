@@ -40,3 +40,9 @@ name = new FormControl(' ')
 })
 
 ```
+## in html template , use FormGroup 
+
+```
+<form FormGroup="CardForm">
+</form>
+```
