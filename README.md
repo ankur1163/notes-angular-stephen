@@ -31,11 +31,11 @@
  
  ## Create instance of FormGroup
  ```
-cardForm = new FormGroup ({   })
+cardForm = new formGroup ({   })
 ```
 ## Use form control 
 ```
-cardForm = new FormGroup ({  
+cardForm = new formGroup ({  
 name = new FormControl(' ')
 })
 
