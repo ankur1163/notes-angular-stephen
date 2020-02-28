@@ -19,4 +19,13 @@
  import {ReactiveFormsModule} from './app.component';
  
  imports :[....,ReactiveFormsModule]
+ ```
+ 
+ ## Rest of the things should be done in component where we want to use reactive forms
+ 
+   Import these 
+   ```
+   import {FormGroup,FormControl} from "@angular/forms";
+   ```
+ 
 
