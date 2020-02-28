@@ -12,5 +12,11 @@
  - harder to deal with dynamic forms (adding, removing form elements)
  - we have to wire up  "FormsModule" to our app module to use them
  
+ ##to use it 
+ Put this two line of codes in app.module
  
+ ```
+ import {ReactiveFormsModule} from './app.component';
+ 
+ imports :[....,ReactiveFormsModule]
 
