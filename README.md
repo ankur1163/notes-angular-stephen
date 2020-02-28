@@ -33,4 +33,7 @@
  ```
 cardForm = new FormGroup ({   })
 ```
-
+## Use form control 
+```
+name = new FormControl(' ')
+```
