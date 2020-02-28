@@ -26,6 +26,11 @@
    Import these 
    ```
    import {FormGroup,FormControl} from "@angular/forms";
+   
    ```
  
+ ## Create instance of FormGroup
+ ```
+cardForm = new FormGroup ({   })
+```
 
