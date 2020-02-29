@@ -102,8 +102,9 @@ cardForm = new FormGroup({
 <div> errors around name:{{cardForm.controls.name.errors |json}}</div>
 ```
 ## validation error - because angular throws null object 
-### so when we use above code, and there is error , angular throws {required:true} , so if ### we use ngIf logic (required is true) it works, but when there is no error, angular 
+#### so when we use above code, and there is error , angular throws {required:true} , so if ### we use ngIf logic (required is true) it works, but when there is no error, angular 
 ### throws null . Then when ngIf tries to check required is true or false. It returns 
 ### error. So, we have to use one more ngIf to check whether that object with required 
-### key exists or not. If we have 2 divs, it will mess up css styling. So Instead of div, ###we will use <ng-container>
+### key exists or not. If we have 2 divs, it will mess up css styling. So Instead of div, ###we will use 
+<ng-container>
   
