@@ -106,5 +106,12 @@ cardForm = new FormGroup({
 ### throws null . Then when ngIf tries to check required is true or false. It returns 
 ### error. So, we have to use one more ngIf to check whether that object with required 
 ### key exists or not. If we have 2 divs, it will mess up css styling. So Instead of div, ###we will use 
-<ng-container>
+```
+<ng-container *ngIf="cardForm.controls.name.errors">
+    <div *ngIf="cardForm.controls.name.errors.required">
+      value is required
+    </div>
+
+  </ng-container>
+  ```
   
