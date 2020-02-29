@@ -52,3 +52,17 @@ name = new FormControl(' ')
 <input formControlName="name"/>
 </form>
 ```
+
+### put some code to check status of form
+
+```
+<form [formGroup]="cardForm">
+  <input formControlName="name" />
+</form>
+<div>Form content: {{cardForm.value | json}}
+
+</div>
+<div>Form status: {{cardForm.valid}}
+
+</div>
+```
