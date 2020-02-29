@@ -111,6 +111,12 @@ cardForm = new FormGroup({
     <div *ngIf="cardForm.controls.name.errors.required">
       value is required
     </div>
+    <div *ngIf="cardForm.controls.name.errors.minlength">
+      Value you entered is
+      {{cardForm.controls.name.errors.minlength.actualLength}}
+      characters long, but it must be at least
+      {{cardForm.controls.name.errors.minlength.requiredLength}}
+    </div>
 
   </ng-container>
   ```
