@@ -55,14 +55,14 @@ name = new FormControl(' ')
 
 ###html put some code to check status of form
 
-```
+```diff
 <form [formGroup]="cardForm">
   <input formControlName="name" />
 </form>
-<div>Form content: {{cardForm.value | json}}
++<div>Form content: {{cardForm.value | json}}
 
-</div>
-<div>Form status: {{cardForm.valid}}
++</div>
++<div>Form status: {{cardForm.valid}}
 
-</div>
++</div>
 ```
