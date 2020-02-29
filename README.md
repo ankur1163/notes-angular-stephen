@@ -53,7 +53,7 @@ name = new FormControl(' ')
 </form>
 ```
 
-### put some code to check status of form
+###HTML put some code to check status of form
 
 ```
 <form [formGroup]="cardForm">
