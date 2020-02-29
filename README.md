@@ -127,3 +127,5 @@ cardForm = new FormGroup({
 <input 
 [ngClass]="{is-danger':control.dirty && control.touched && control.errors }" . />
 ```
+### submit form
+<form (ngSubmit) = "onSubmit()"
