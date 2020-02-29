@@ -81,3 +81,7 @@ cardForm = new FormGroup({
  Validators.min(3)
 ```
 ## displaying errors for validations
+
+```
+<div> errors around name:{{cardForm.controls.name.errors |json}}</div>
+```
