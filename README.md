@@ -80,3 +80,4 @@ cardForm = new FormGroup({
 ```
  Validators.min(3)
 ```
+## displaying errors for validations
