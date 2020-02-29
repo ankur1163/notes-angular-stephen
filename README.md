@@ -85,3 +85,19 @@ cardForm = new FormGroup({
 ```
 <div> errors around name:{{cardForm.controls.name.errors |json}}</div>
 ```
+## display message if there is error 
+```diff
+<form [formGroup]="cardForm">
+  <input formControlName="name" />
+  +<div *ngIf="cardForm.controls.name.errors.required">
+    +value is required
+  +</div>
+</form>
+<div>Form content: {{cardForm.value | json}}
+
+</div>
+<div>Form status: {{cardForm.valid}}
+
+</div>
+<div> errors around name:{{cardForm.controls.name.errors |json}}</div>
+```
