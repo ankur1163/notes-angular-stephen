@@ -66,3 +66,10 @@ name = new FormControl(' ')
 
 +</div>
 ```
+##lets add validation that input is "required field"
+
+```diff
+cardForm = new FormGroup({
+    +name: new FormControl("", [Validators.required])
+  });
+```
