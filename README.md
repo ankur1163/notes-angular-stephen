@@ -89,9 +89,9 @@ cardForm = new FormGroup({
 ```diff
 <form [formGroup]="cardForm">
   <input formControlName="name" />
-  +<div *ngIf="cardForm.controls.name.errors.required">
-    +value is required
-  +</div>
++<div *ngIf="cardForm.controls.name.errors.required">
++value is required
++</div>
 </form>
 <div>Form content: {{cardForm.value | json}}
 
