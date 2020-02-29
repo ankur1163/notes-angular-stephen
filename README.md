@@ -73,3 +73,10 @@ cardForm = new FormGroup({
 +name: new FormControl("", [Validators.required])
   });
 ```
+## add validation to check minimum length of characters and minimum number
+```
+ Validators.minLength(3)
+```
+```
+ Validators.min(3)
+```
