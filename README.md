@@ -70,6 +70,6 @@ name = new FormControl(' ')
 
 ```diff
 cardForm = new FormGroup({
-    +name: new FormControl("", [Validators.required])
++name: new FormControl("", [Validators.required])
   });
 ```
