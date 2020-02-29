@@ -121,3 +121,9 @@ cardForm = new FormGroup({
   </ng-container>
   ```
   
+### add conditional css class 
+
+```
+<input 
+[ngClass]="{is-danger':control.dirty && control.touched && control.errors }" . />
+```
