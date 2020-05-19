@@ -172,8 +172,11 @@ constructor() { }
                     <div class="control">
                       <input class="form-control input is-primary is-large" type="text"  required 
                       [(ngModel)]="studentSignupInfo.Fullname" 
+                      //this is coming from component class 
                       name="name" 
+                      //we are giving name to this input field. when it goes to api, it will put "name" :"value"
                       #Fullname="ngModel">
+                      //we need to give name to this field and tie up with ngModel which holds all angular classes
                     </div>
                     <div [hidden]="Fullname.valid || Fullname.pristine">
                       This is required
