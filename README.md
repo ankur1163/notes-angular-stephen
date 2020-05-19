@@ -132,3 +132,112 @@ cardForm = new FormGroup({
 
 ### disabled button till form is valid
 <button [disabled]="cardForm.invalid"
+
+#### Template forms
+
+## first create a model 
+
+- signupstudent.ts
+```
+export class signupStudent {
+    constructor (
+        public Fullname: string,
+        public email :string,
+        public password : string,
+        public confirmPassword: string,
+    ){
+
+    }
+}
+```
+-Then go inside the component and inside signup-page.component.ts 
+```
+constructor() { }
+  studentSignupInfo = new signupStudent("ank sh","er@gmail.com","houseon","houseon")
+```
+-then in component's html 
+
+```
+
+
+<div   class="signupbox" >
+    <div   fxLayout="column" fxLayoutAlign="center center">
+        
+          
+        <h1>Sign up here</h1>
+            <form class="signupdiv">
+         
+                <div class="field">
+                    <label class="label is-large"> Full Name</label>
+                    <div class="control">
+                      <input class="form-control input is-primary is-large" type="text"  required 
+                      [(ngModel)]="studentSignupInfo.Fullname" 
+                      name="name" 
+                      #Fullname="ngModel">
+                    </div>
+                    <div [hidden]="Fullname.valid || Fullname.pristine">
+                      This is required
+                    </div>
+                   
+                  </div>
+
+                  <div class="field">
+                    <label class="label is-large"> Email</label>
+                    <div class="control">
+                      <input class="form-control input is-primary is-large" type="text" required 
+                      [(ngModel)]="studentSignupInfo.email"
+                      name="email"
+                      #email="ngModel"
+                       >
+                    </div>
+                    <div [hidden]="email.valid || email.pristine">
+                        Email is required
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label is-large"> Password</label>
+                    <div class="control">
+                      <input class="form-control input  is-primary is-large" type="password"
+                      required
+                      [(ngModel)]="studentSignupInfo.password"
+                      name="password"
+                      #password= "ngModel"
+                      >
+                    </div>
+                    <div [hidden]="password.valid || password.pristine">
+                        Password is required
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label is-large"> Confirm  Password</label>
+                    <div class="control">
+                      <input class="form-control input  is-primary is-large" type="password"
+                      required
+                      [(ngModel)]="studentSignupInfo.confirmPassword"
+                      name="confirmPassword"
+                      #confirmPassword="ngModel"
+                      >
+                    </div>
+                    <div [hidden]="confirmPassword.valid || confirmPassword.pristine">
+                        Confirm password is required
+                    </div>
+                  </div>
+                  
+                  
+                 <div class="tentopmargin field is-grouped">
+                    <div class="control">
+                      <button class="button is-large is-link">Submit</button>
+                    </div>
+                    <div class="control">
+                      <button class="button is-large is-link is-light">Cancel</button>
+                    </div>
+                  </div>
+                
+               
+              
+            </form>
+       </div>
+</div>
+```
